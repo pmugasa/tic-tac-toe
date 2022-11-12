@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
@@ -15,59 +15,53 @@
       <!--gameboard container-->
       <div class="grid grid-cols-3 mx-auto w-72">
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          1
-        </div>
+          boxIndex="0"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          2
-        </div>
+          boxIndex="1"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          3
-        </div>
+          boxIndex="2"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          4
-        </div>
+          boxIndex="3"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          5
-        </div>
+          boxIndex="4"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          6
-        </div>
+          boxIndex="5"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          7
-        </div>
+          boxIndex="6"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          8
-        </div>
+          boxIndex="7"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
+
         <div
-          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold"
-        >
-          9
-        </div>
+          boxIndex="8"
+          class="h-24 w-24 border-black border-2 border-solid text-center text-2xl font-bold boxes"
+        ></div>
       </div>
       <div>
-        <button type="button" class="rounded-full bg-cyan-500 px-5 py-2">
+        <button type="button" class="btn rounded-full bg-cyan-500 px-5 py-2">
           Reset Game
         </button>
       </div>
       <div>
-        <h2 class="player-info">Player X's Turn</h2>
+        <h2 class="statusText"></h2>
       </div>
     </div>
   </body>
+  <script src="/index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
